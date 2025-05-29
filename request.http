@@ -1,0 +1,38 @@
+POST http://localhost:8080/hello
+Content-Type: application/json
+
+{
+  "name": "New Awesome Item",
+  "description": "From curl"
+}
+
+###
+GET http://localhost:8080/hello/1dc4ca0e-2763-41fa-a4e7-8a4fe3b400b0
+
+###
+GET http://localhost:8080/hello/empty
+Content-Type: application/json
+
+###
+GET http://localhost:8080/hello/itemById/2
+Content-Type: application/json
+
+###
+GET http://localhost:8080/hello/withCustomHeaders
+Content-Type: application/json
+
+###
+GET http://localhost:8080/hello/mappedError/5
+Content-Type: application/json
+
+###
+GET http://localhost:8080/hello/error
+Content-Type: application/json
+
+###
+GET http://localhost:8080/hello/api/error
+Content-Type: application/json
+
+###
+GET http://localhost:8080/hello/custom-error
+Content-Type: application/json
