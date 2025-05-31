@@ -15,15 +15,17 @@ import jakarta.ws.rs.core.Response;
 
 import java.util.List;
 
-@Path("posts")
+//@Path("posts")
 @ApplicationScoped
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class PostResource {
 
+    // COMMENTED TO USE OTHERS DATABASE INSTEAD H2
+
     PostMapper mapper;
 
-    @POST
+    /*@POST
     @Transactional
     public Response create(final CreatePostDto dto) {
         Post post = mapper.toEntity(dto);
@@ -64,5 +66,5 @@ public class PostResource {
         if (post == null) return Response.status(Response.Status.NOT_FOUND).build();
         post.delete();
         return Response.noContent().build();
-    }
+    }*/
 }

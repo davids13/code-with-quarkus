@@ -6,8 +6,8 @@ import jakarta.persistence.Entity;
 
 import java.time.LocalDateTime;
 
-@Entity
-public class Post extends PanacheEntity {
+//@Entity
+public class Post /*extends PanacheEntity */{
 
     @Column(nullable = false)
     public String title;

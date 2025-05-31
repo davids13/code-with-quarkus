@@ -1,0 +1,11 @@
+Why Transactions Matters:
+    - Let’s set the scene. You're transferring €100 from Alice to Bob.
+      Two things need to happen: debit Alice’s account and credit Bob’s.
+      What if your app crashes halfway through? Now Alice is €100 poorer, and Bob is still broke.
+      That’s not a bug, it’s a lawsuit waiting to happen.
+
+This is why we need ACID-compliant transactions:
+    - Atomicity: all or nothing
+    - Consistency: keep the database valid
+    - Isolation: no cross-talk between concurrent operations
+    - Durability: changes that stick, even after a power outage
