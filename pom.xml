@@ -110,7 +110,15 @@
             <artifactId>mapstruct</artifactId>
             <version>1.6.3</version>
         </dependency>
-
+        <!-- websocket -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-websockets-next</artifactId>
+        </dependency>
+        <dependency> <!-- For periodically pushing updates to clients -->
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-scheduler</artifactId>
+        </dependency>
         <!-- test -->
         <dependency>
             <groupId>io.quarkus</groupId>
