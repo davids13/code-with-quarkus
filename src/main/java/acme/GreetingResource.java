@@ -150,7 +150,7 @@ public class GreetingResource {
     @Path("mutiny/{id}")
     public Uni<Response> getById(Long id) {
         return Fruit.findById(id);
-
-
     }
+
+
 }
