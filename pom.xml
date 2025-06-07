@@ -67,6 +67,11 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-smallrye-jwt</artifactId>
         </dependency>
+        <!-- Secure your applications using properties files | For basic authentication via properties files-->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-elytron-security-properties-file</artifactId>
+        </dependency>
         <!-- smallrye jwt build (creating jwt) -->
         <dependency>
             <groupId>io.quarkus</groupId>
